@@ -11,7 +11,8 @@ public class Manager implements interfazManager {
 	
 	
 	// Declara un DBManager de la BD elegida
-	private DBManagerOracle dbManager=new DBManagerOracle();
+	private DBManagerOracle dbManager=new DBManagerOracle(); 
+        
 	
 	public void setDataBase(int numDatabase){
 		if(numDatabase==0) {
@@ -21,12 +22,12 @@ public class Manager implements interfazManager {
 	}
 	//USUARIO
 	public boolean esAdmin(String nombreUsu, String passUsu) {
-			// Recibe nombre y contraseña si existe devuelve true
+			// Recibe nombre y contraseï¿½a si existe devuelve true
 			return dbManager.esAdmin(nombreUsu, passUsu);
 		}
 
 		public boolean esUsuario(String nombreUsu, String passUsu) throws Exception{
-			// Recibe nombre y contraseña si existe devuelve true
+			// Recibe nombre y contraseï¿½a si existe devuelve true
 			return dbManager.esUsuario(nombreUsu, passUsu);
 		}
 
